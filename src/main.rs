@@ -14,7 +14,12 @@ fn main() {
                 s.add_layer(
                     Dialog::new()
                         .title("Cluster Map")
-                        .content(TextView::new("Your node is in the middle of the map."))
+                        .content(TextView::new(
+                            "Map:\n\
+                             [ ] [ ] [ ]\n\
+                             [ ] [X] [ ]\n\
+                             [ ] [ ] [ ]"
+                        ))
                         .button("Add Node", |s| {
                             s.add_layer(Dialog::info("Command to join another node: join <node_address>"));
                         })
@@ -26,3 +31,4 @@ fn main() {
 
     siv.run();
 }
+
