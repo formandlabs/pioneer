@@ -12,9 +12,7 @@ Currently under very early development, not ready for use.
 MIT
 
 ## Uses
-* [Slint](https://slint.dev) for UI
 * [Cursive](https://github.com/gyscos/cursive/) for a terminal UI
 
 ## Credits
 [PioneerFS](https://pioneer.eco) is developed by [Formand Labs](https://formand.tech) and is open source under the MIT license.
-```
