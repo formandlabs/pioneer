@@ -49,7 +49,7 @@ fn test_create_cluster() {
     siv.step();
 
     assert!(siv.find_name::<Dialog>("Cluster Map").is_some());
-    assert!(siv.find_name::<TextView>("Map:\n[ ] [ ] [ ]\n[ ] [X] [ ]\n[ ] [ ] [ ]").is_some());
+    assert!(siv.find_name::<TextView>("Map:\n. . .\n. X .\n. . .").is_some());
 }
 
 #[test]
@@ -69,4 +69,5 @@ fn test_add_node() {
 
     assert!(siv.find_name::<Dialog>("Command to join another node: join <node_address>").is_some());
 }
+
 
