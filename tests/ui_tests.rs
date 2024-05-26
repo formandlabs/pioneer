@@ -15,10 +15,7 @@ fn setup_siv() -> Cursive {
                     Dialog::new()
                         .title("Cluster Map")
                         .content(TextView::new(
-                            "Map:\n\
-                             [ ] [ ] [ ]\n\
-                             [ ] [X] [ ]\n\
-                             [ ] [ ] [ ]"
+                            "Map:\n                             . . .\n                             . X .\n                             . . ."
                         ))
                         .button("Add Node", |s| {
                             s.add_layer(Dialog::info("Command to join another node: join <node_address>"));
@@ -72,3 +69,4 @@ fn test_add_node() {
 
     assert!(siv.find_name::<Dialog>("Command to join another node: join <node_address>").is_some());
 }
+
